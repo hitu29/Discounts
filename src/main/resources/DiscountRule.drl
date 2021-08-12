@@ -22,9 +22,9 @@ rule "Discount for CASH payment above 25000"
         orderObject.setDiscount(30);
 end;
 
-rule "Discount for CHEQUE or APP TRANSFER payment will be 0"
-    when
-        orderObject : OrderRequest( paymentType=="CHEQUE" || paymentType=="APP TRANSFER" );
-    then
-        orderObject.setDiscount(0);
-end;
+// rule "Discount for CHEQUE or APP TRANSFER payment will be 0"
+//     when
+//         orderObject : OrderRequest( paymentType=="CHEQUE" || paymentType=="APP TRANSFER" );
+//     then
+//         orderObject.setDiscount(0);
+// end;
